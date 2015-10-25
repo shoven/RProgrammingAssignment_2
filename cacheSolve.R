@@ -1,9 +1,7 @@
-cacheSolve <- function(x, ...) 
-{
-  
-inv <- x$getinverse()
+cacheSolve <- function(x, ...) {
+  inv <- x$getinverse()
   if(!is.null(inv)) {
-    message("getting cached data.")
+    message("Cached Data Retreival")
     return(inv)
   }
   data <- x$get()
